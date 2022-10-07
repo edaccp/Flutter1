@@ -1,5 +1,14 @@
 # flutter1
 
+
+echo "# Flutter1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:edaccp/Flutter1.git
+git push -u origin main
+
 A new Flutter project.
 
 ## Getting Started
