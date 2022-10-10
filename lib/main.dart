@@ -7,7 +7,6 @@
 // git remote add origin git@github.com:edaccp/Flutter1.git
 // git push -u origin main
 
-
 import 'package:flutter/material.dart';
 
 void main() {

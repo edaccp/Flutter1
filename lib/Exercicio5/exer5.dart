@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 // Utilize o código do Exercício 4 como base.
 // Modifique a cor do fundo do aplicativo, adicionando um gradiente entre duas cores.
@@ -16,12 +15,25 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Card(
-        child: Center(
-          child: Text(
-            "Flutter",
-            style: TextStyle(fontSize: 32.0),
+        child: Container(
+          // https://www.digitalocean.com/community/tutorials/flutter-flutter-gradient
+          // Não entendi muito bem como chegar a resposta, me faltou um melhor conhecimento das classes do Flutter
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.blueAccent,
+              Colors.purpleAccent,
+            ],
+          )),
+          child: const Center(
+            child: Text(
+              "Flutter Gradiente",
+              style: TextStyle(fontSize: 32.0),
+            ),
           ),
         ),
       ),
