@@ -37,7 +37,7 @@ class Recipe extends StatelessWidget {
             //  const SizedBox(height: 20),
             Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center, //spaceBetween
                 children: [
                   const Block(altura: 100, largura: 100, cor: Colors.green),
                   Expanded(child: SizedBox()),
