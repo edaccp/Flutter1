@@ -128,18 +128,18 @@ class _StoneState extends State<Stone> {
                 child: Stack(children: [
                   Image.network('https://i.imgur.com/etWX9CB.jpg'),
                   Align(
+                      alignment: Alignment.topCenter,
                       child: Container(
-                          child: Image.network(imagem),
-                          padding: EdgeInsets.all(10)),
-                      alignment: Alignment.topCenter),
+                          padding: const EdgeInsets.all(10),
+                          child: Image.network(imagem))),
                   Center(
                     child: Container(
+                        padding: const EdgeInsets.all(20),
                         child: Text(
                           'Stones $stone\nPieces $pieces\nFragments $fragments',
                           textDirection: TextDirection.ltr,
                           textAlign: TextAlign.center,
-                        ),
-                        padding: EdgeInsets.all(20)),
+                        )),
                   ),
                 ]),
               )

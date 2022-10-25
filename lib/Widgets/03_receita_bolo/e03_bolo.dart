@@ -38,12 +38,12 @@ class Recipe extends StatelessWidget {
             Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center, //spaceBetween
-                children: [
-                  const Block(altura: 100, largura: 100, cor: Colors.green),
+                children: const [
+                  Block(altura: 100, largura: 100, cor: Colors.green),
                   Expanded(child: SizedBox()),
-                  const Block(altura: 100, largura: 100, cor: Colors.red),
+                  Block(altura: 100, largura: 100, cor: Colors.red),
                   Expanded(child: SizedBox()),
-                  const Block(altura: 100, largura: 100, cor: Colors.blue),
+                  Block(altura: 100, largura: 100, cor: Colors.blue),
                 ]),
           ]),
     );
@@ -68,7 +68,7 @@ class Block extends StatelessWidget {
       height: altura,
       width: largura,
       color: cor,
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
     );
   }
 }
