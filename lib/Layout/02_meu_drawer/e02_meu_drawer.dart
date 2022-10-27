@@ -47,15 +47,84 @@ class MenuDrawer extends StatelessWidget {
     const appName = 'Menu Drawer';
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.menu),
-        title: Text(appName),
+        //  leading: const Icon(Icons.back_hand),
+        title: const Text(appName),
         backgroundColor: Colors.pink[600],
         foregroundColor: Colors.pink[100],
       ),
+
+      endDrawer: Drawer(
+        backgroundColor: Colors.pink[100],
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: const [
+            ListTile(
+              leading: Icon(
+                Icons.flash_on,
+                color: Colors.blue,
+              ),
+              title: Text("Flutter"),
+              subtitle: Text("Tudo são Widgtes"),
+              trailing: Icon(
+                Icons.chevron_right,
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.mood,
+                color: Colors.red,
+              ),
+              title: Text("Dart"),
+              subtitle: Text("É muito forte"),
+              trailing: Icon(
+                Icons.chevron_right,
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.coffee,
+                color: Colors.brown,
+              ),
+              title: Text("Cafessíneo"),
+              subtitle: Text("Quero cafééé"),
+              trailing: Icon(
+                Icons.chevron_right,
+              ),
+            ),
+          ],
+        ),
+      ),
+
+      //1ª tentativa
+
+      // Expanded(
+      //   child: Container(
+      //     color: Colors.brown,
+      //     child: Column(
+      //         //mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //        // crossAxisAlignment: CrossAxisAlignment.start,
+      //         children: [
+      //           Container(
+      //               color: Colors.brown,
+      //               //alignment: Alignment.bottomLeft,
+      //               child: const Icon(Icons.bolt)),
+      //           Container(
+      //               color: Colors.brown,
+      //               //alignment: Alignment.bottomLeft,
+      //               child: const Icon(Icons.mood)),
+      //           Container(
+      //               color: Colors.brown,
+      //               //alignment: Alignment.bottomLeft,
+      //               child: const Icon(Icons.coffee)),
+      //         ]),
+      //   ),
+      // ),
+
       body: Container(
         alignment: Alignment.center,
-        child: Text(appName),
+        //    child: const Text(appName),
       ),
+
       // bottomNavigationBar: Container(
       //   height: 50.0,
       //   color: Colors.brown,
