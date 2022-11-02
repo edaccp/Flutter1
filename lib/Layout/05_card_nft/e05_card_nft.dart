@@ -48,84 +48,10 @@ class CardNFT extends StatefulWidget {
 
 class _CardNFTState extends State<CardNFT> {
   double pad = 10.0;
-  // double progress = 0;
-//  String text = 'Clique para iniciar o upload';
-  // void uploadButton() {
-  //   progress += Random().nextDouble();
-  //   if (progress > 1) {
-  //     progress = 1;
-  //   }
-  //   if (progress > 0 && progress < 1) {
-  //     setState(() {
-  //       text = '${(progress * 100).toStringAsFixed(1)}%';
-  //     });
-  //   } else if (progress == 1) {
-  //     setState(() {
-  //       text = 'Upload Completo!';
-  //       // LinearProgressIndicator(
-  //       //   value: progress,
-  //       //   minHeight: 10,
-  //       //   backgroundColor: Colors.yellow,
-  //       //   color: Colors.green,
-  //       //   valueColor: const AlwaysStoppedAnimation<Color>(Colors.green),
-  //       // );
-  //     });
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-/*    appBar: AppBar(
-        //  leading: const Icon(Icons.back_hand),
-        title: const Text(appName),
-        backgroundColor: Colors.pink[600],
-        foregroundColor: Colors.pink[100],
-      ),
-
-      endDrawer: Drawer(
-        backgroundColor: Colors.pink[100],
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: const [
-            ListTile(
-              leading: Icon(
-                Icons.flash_on,
-                color: Colors.blue,
-              ),
-              title: Text("Flutter"),
-              subtitle: Text("Tudo são Widgtes"),
-              trailing: Icon(
-                Icons.chevron_right,
-              ),
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.mood,
-                color: Colors.red,
-              ),
-              title: Text("Dart"),
-              subtitle: Text("É muito forte"),
-              trailing: Icon(
-                Icons.chevron_right,
-              ),
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.coffee,
-                color: Colors.brown,
-              ),
-              title: Text("Cafessíneo"),
-              subtitle: Text("Quero cafééé"),
-              trailing: Icon(
-                Icons.chevron_right,
-              ),
-            ),
-          ],
-        ),
-      ),
-*/
-
       body: Container(
           color: Colors.black,
           child: Column(
@@ -142,8 +68,6 @@ class _CardNFTState extends State<CardNFT> {
                 child: Padding(
                     padding: EdgeInsets.all(pad),
                     child: Column(
-                      //  mainAxisAlignment: MainAxisAlignment.center,
-                      // crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(5.0),
@@ -204,60 +128,27 @@ class _CardNFTState extends State<CardNFT> {
                           thickness: 0.0,
                           color: Colors.grey,
                         ),
-                        Row(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              // Icon(
-                              //   Icons.create,
-                              //   color: Colors.yellow,
-                              // ),
-                              const CircleAvatar(
-                                  backgroundImage: NetworkImage(
-                                      'https://avatars.githubusercontent.com/u/113645889?v=4')),
-                              Text(" Criado por ",
-                                  style: TextStyle(
-                                      fontSize: 15.0,
-                                      color: Colors.lightBlueAccent[100])),
+                        Row(children: [
+                          const CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  'https://avatars.githubusercontent.com/u/113645889?v=4')),
+                          Text(" Criado por ",
+                              style: TextStyle(
+                                  fontSize: 15.0,
+                                  color: Colors.lightBlueAccent[100])),
 
-                              const Text("Eduardo Pedroso",
-                                  style: TextStyle(
-                                      fontSize: 15.0,
-                                      color: Colors.white)), // text
-                            ]),
+                          const Text("Eduardo Pedroso",
+                              style: TextStyle(
+                                  fontSize: 15.0, color: Colors.white)), // text
+                        ]),
                         const SizedBox(
                           height: 60,
                         ),
                       ],
                     )),
               ),
-
-              // LinearProgressIndicator(
-              //   value: progress,
-              //   minHeight: 10,
-              //   backgroundColor: Colors.yellow,
-              //   color: Colors.orange,
-              //   //valueColor: const AlwaysStoppedAnimation<Color>(Colors.orange),
-              // )
             ],
           )),
-/*    bottomNavigationBar: BottomNavigationBar(
-      backgroundColor: Colors.grey,
-      items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
-          label: 'Configurações',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.login),
-          label: 'Login',
-        ),
-      ],
-    )
-    */
     );
   }
 }
