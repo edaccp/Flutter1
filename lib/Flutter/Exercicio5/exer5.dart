@@ -19,7 +19,8 @@ class App extends StatelessWidget {
       home: Card(
         child: Container(
           // https://www.digitalocean.com/community/tutorials/flutter-flutter-gradient
-          // Não entendi muito bem como chegar a resposta, me faltou um melhor conhecimento das classes do Flutter
+          // Não entendi muito bem como chegar a resposta, me faltou um melhor conhecimento
+          // das classes do Flutter
           decoration: const BoxDecoration(
               gradient: LinearGradient(
             begin: Alignment.topLeft,
